@@ -1,0 +1,23 @@
+{
+  "name": "aagent_demo",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "aa-testkit": "https://github.com/valyakin/aa-testkit",
+    "headless-obyte": "https://github.com/byteball/headless-obyte",
+    "aagent.js": "^0.0.1"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ],
+    "failFast": true,
+    "serial": true
+  },
+  "license": "MIT"
+}
