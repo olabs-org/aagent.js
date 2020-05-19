@@ -1,6 +1,6 @@
 {
   "name": "aagent.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "It is CLI and library to work with Autonomous Agents on Obyte",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,15 @@
     "agent"
   ],
   "author": "olabs.org",
+  "homepage": "https://github.com/olabs-org/aagent.js",
   "license": "MIT",
+  "repository": {
+    "url": "git://github.com/olabs-org/aagent.js.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/olabs-org/aagent.js/issues"
+  },
   "dependencies": {
     "fs-extra": "^9.0.0",
     "global": "^4.4.0",
