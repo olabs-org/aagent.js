@@ -25,6 +25,7 @@ Open GUI Wallet to deploy
 ```bash
 aagent deploy aa.oscript
 ```
+*If the file is too large it will be uploaded to the server and transferred to the client in the link.* <br>
 This command supports argument **--testnet** to deploy script through the testnet or mainnet wallet.
 
 <br>
@@ -168,6 +169,7 @@ aa.events.on('new_aa_definition_saved', (definition, body) => {
   console.error('new aa definition saved', definition, body);
 });
 ```
+*This event can be triggered twice with the same data (architectural features), please consider this.*<br>
 Arguments:
 - definition - definition from messages
 - body - raw body from event
