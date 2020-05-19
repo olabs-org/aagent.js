@@ -1,13 +1,12 @@
 {
   "name": "aagent.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "It is CLI to work with Autonomous Agents on Obyte",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "aagent.js": "./cli.js"
+    "aagent": "./cli.js"
   },
   "keywords": [
     "obyte",

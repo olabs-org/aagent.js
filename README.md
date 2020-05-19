@@ -6,24 +6,24 @@ It is CLI and [library](https://github.com/olabs-org/aagent.js-lib) to work with
 Init
 ```bash
 npm i -g aagent.js
-aagent.js --help
+aagent --help
 ```
 
 Create project from [template](template) (with AA example, tests and library)
 ```bash
-aagent.js init folder
+aagent init folder
 ```
 <br>
 
 Validating AA
 ```bash
-aagent.js validate aa.oscript
+aagent validate aa.oscript
 ```
 <br>
 
 Open GUI Wallet to deploy
 ```bash
-aagent.js deploy aa.oscript
+aagent deploy aa.oscript
 ```
 *If the file is too large it will be uploaded to the server and transferred to the client in the link.* <br>
 This command supports argument **--testnet** to deploy script through the testnet or mainnet wallet.
