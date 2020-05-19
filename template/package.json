@@ -7,7 +7,7 @@
   "dependencies": {
     "aa-testkit": "https://github.com/valyakin/aa-testkit",
     "headless-obyte": "https://github.com/byteball/headless-obyte",
-    "aagent.js": "^0.0.1"
+    "aagent.js-lib": "^0.0.1"
   },
   "devDependencies": {
     "ava": "^3.8.2"

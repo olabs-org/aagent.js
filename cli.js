@@ -17,22 +17,22 @@ const argv =
     yargs.positional('folder', {
       description: 'folder for project'
     });
-  }, argv => {
-    commands.init(argv.folder);
+  }, async argv => {
+    await commands.init(argv.folder);
   })
   .command('validate [file]', 'aa file validation', yargs => {
     yargs.positional('file', {
       description: 'path to oscript file'
     })
-  }, argv => {
-    commands.validate(argv.file);
+  }, async argv => {
+    await commands.validate(argv.file);
   })
   .command('deploy [file]', 'Open wallet for deploy', yargs => {
     yargs.positional('file', {
       description: 'path to oscript file'
     })
   }, async argv => {
-    commands.deploy(argv.file, argv.testnet);
+    await commands.deploy(argv.file, argv.testnet);
   })
   .showHelpOnFail(true)
   .demandCommand(1, '')
