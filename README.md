@@ -47,25 +47,25 @@ eventBus.on('headless_wallet_ready', () => {
     const aa = new AA('address');
 
     aa.events.on('new_request', (request) => {
-        console.log('new request', request);
+        console.error('new request', request);
     });
 
     aa.events.on('new_response', (err, response, vars) => {
-        console.log('new response', response, vars);
+        console.error('new response', response, vars);
     });
 
     aa.events.on('new_aa_definition', (definition) => {
-        console.log('new aa definition', definition);
+        console.error('new aa definition', definition);
     });
 
     aa.events.on('new_aa_definition_saved', (definition) => {
-        console.log('new aa definition saved', definition);
+        console.error('new aa definition saved', definition);
     });
 
     aa.newResponseFilter((err, params, vars) => {        
         return true;
       }, (err, params, vars) => {
-        console.log(err, params, vars);
+        console.error(err, params, vars);
       });
 
 });
@@ -93,7 +93,7 @@ will return variables from AA.
 aa.newRequestFilter((request, body) => {
     return true;
   }, (request, body) => {
-    console.log(request, body);
+    console.error(request, body);
   });
 ```
 A series of this methods is triggered by events and if the first function returns true, it calls the second function.
@@ -104,21 +104,21 @@ Other methods from series:
 aa.newResponseFilter((err, params, vars, body) => {
     return true;
   }, (err, params, vars, body) => {
-    console.log(err, params, vars, body);
+    console.error(err, params, vars, body);
   });
 ```
 ```javascript
 aa.newDefinitionFilter((definition, body) => {
     return true;
   }, (definition, body) => {
-    console.log(definition, body);
+    console.error(definition, body);
   });
 ```
 ```javascript
 aa.newDefinitionSavedFilter((definition, body) => {
     return true;
   }, (definition, body) => {
-    console.log(definition, body);
+    console.error(definition, body);
   });
 ```
 <br>
@@ -127,7 +127,7 @@ aa.newDefinitionSavedFilter((definition, body) => {
 ##### new_request
 ```javascript
 aa.events.on('new_request', (request, body) => {
-  console.log('new request', request, body);
+  console.error('new request', request, body);
 });
 ```
 Arguments:
@@ -139,7 +139,7 @@ Arguments:
 ##### new_response
 ```javascript
 aa.events.on('new_response', (err, params, vars, body) => {
-  console.log('new response', err, params, vars, body);
+  console.error('new response', err, params, vars, body);
 });
 ```
 Arguments:
@@ -153,7 +153,7 @@ Arguments:
 ##### new_aa_definition
 ```javascript
 aa.events.on('new_aa_definition', (definition, body) => {
-  console.log('new aa definition', definition, body);
+  console.error('new aa definition', definition, body);
 });
 ```
 Arguments:
@@ -165,7 +165,7 @@ Arguments:
 ##### new_aa_definition_saved 
 ```javascript
 aa.events.on('new_aa_definition_saved', (definition, body) => {
-  console.log('new aa definition saved', definition, body);
+  console.error('new aa definition saved', definition, body);
 });
 ```
 Arguments:
