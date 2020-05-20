@@ -1,3 +1,5 @@
+# aagent.js
+
 ### What's it?
 It is [CLI](https://github.com/olabs-org/aagent-cli) and library to work with Autonomous Agents on Obyte
 
