@@ -80,10 +80,11 @@ class AA {
   }
 
 
-  static getAAVars(address) {
+  static getAAVars(address, params = {}) {
+    const _params = Object.assign({ address }, params);
     return new Promise(resolve => {
       network.requestFromLightVendor('light/get_aa_state_vars',
-        { address },
+        _params,
         (ws, request, response) => {
           return resolve(response);
         });
