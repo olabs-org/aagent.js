@@ -38,6 +38,9 @@ class AAs {
       });
     }
 
+    aa_request = aa_request.bind(this);
+    aa_response = aa_response.bind(this);
+
     if(!conf.bLight) {
       eventBus.on('new_joint', objJoint => {
         const objUnit = objJoint.unit;

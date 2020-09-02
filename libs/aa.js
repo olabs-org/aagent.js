@@ -61,6 +61,11 @@ class AA {
       });
     }
 
+    aa_request = aa_request.bind(this);
+    aa_response = aa_response.bind(this);
+    aa_definition = aa_definition.bind(this);
+    aa_definition_saved = aa_definition_saved.bind(this);
+
     if (!conf.bLight) {
       const storage = require('ocore/storage');
       const db = require('ocore/db');

@@ -47,7 +47,7 @@ eventBus.on('headless_wallet_ready', () => {
         console.error('new aa definition saved', definition);
     });
 
-    aa.newResponseFilter((err, params, vars) => {        
+    aa.addResponseEventHandler((err, params, vars) => {        
         return true;
       }, (err, params, vars) => {
         console.error(err, params, vars);
