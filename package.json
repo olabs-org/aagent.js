@@ -1,6 +1,6 @@
 {
   "name": "aagent.js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "It is library to work with Autonomous Agents on Obyte",
   "main": "index.js",
   "scripts": {
